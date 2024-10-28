@@ -1,0 +1,18 @@
+services:
+  api:
+    container_name: ${NODE_ENV}-api
+    build:
+      context: .
+      dockerfile: .Dockerfile
+      tags:
+        - ${NODE_ENV}-api
+    ports:
+      - '${PORT}:${PORT}'
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - /app/node_modules/
+    deploy:
+      resources:
+        limits:
+          memory: 2000M
