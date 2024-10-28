@@ -1,4 +1,4 @@
-# Instalation
+# Installation
 
 - docker compose up
 
@@ -10,7 +10,7 @@
 
 - Question id not auto generated need to send from front end
 
-- Any user id acceptes while getting result
+- Any user id is accepted while getting result
 
 - Options key can be any value
 
