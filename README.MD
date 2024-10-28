@@ -6,12 +6,12 @@
 
 # known issues and limitations.
 
-- temporary data loss on server restart
+- Temporary data loss on server restart
 
-- question id not auto generated need to send from front end
+- Question id not auto generated need to send from front end
 
 - Any user id acceptes while getting result
 
-- options key can be any value
+- Options key can be any value
 
-- no unit test
+- No unit test
