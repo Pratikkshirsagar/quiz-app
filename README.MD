@@ -1,6 +1,6 @@
 # Instalation
 
-- --- docker compose up
+- docker compose up
 
 # known issues and limitations.
 
