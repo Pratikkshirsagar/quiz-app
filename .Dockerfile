@@ -4,10 +4,12 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm ci
+RUN npm cache clean --force
+
+RUN npm ci --legacy-peer-deps
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3333
 
-CMD ["npm","run","start:dev"]
+CMD ["npm","run","dev"]
