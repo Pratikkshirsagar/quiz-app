@@ -13,5 +13,3 @@
 - Any user id is accepted while getting result
 
 - Options key can be any value
-
-- No unit test
