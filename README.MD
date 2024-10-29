@@ -2,6 +2,8 @@
 
 - docker compose up
 
+- alternate command `npm run dev`
+
 - committed .env file for ease of running the project
 
 # known issues and limitations.
