@@ -2,30 +2,7 @@ import type { HttpContext } from '@adonisjs/core/http'
 import { quizValidator } from '#validators/quiz'
 import { storeAnswersValidator } from '#validators/store_answer'
 import { getResultValidator } from '#validators/get_result'
-
-interface QuizDB {
-  quiz: {
-    [quizId: string]: {
-      title: string
-      questions: {
-        id: string
-        question: string
-        options: { [key: string]: string }
-        answer: string
-      }[]
-    }
-  }
-  result: {
-    [userId: string]: {
-      [quizId: string]: {
-        [questionId: string]: {
-          selectedOption: string
-          isCorrect: boolean
-        }
-      }
-    }
-  }
-}
+import QuizDB from '#interfaces/quiz_db_interfaces'
 
 const db: QuizDB = {
   quiz: {},
