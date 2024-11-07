@@ -8,7 +8,7 @@ export const quizValidator = vine.compile(
         id: vine.string(),
         question: vine.string(),
         answer: vine.string(),
-        options: vine.any(), // fix this
+        options: vine.any(),
       })
     ),
   })
